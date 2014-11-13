@@ -1,5 +1,5 @@
-docker-apache2-php-mariadb
-==========================
+docker-apache2-php-postgresql
+=============================
 
 Docker image to PHP and PostgreSQL standard projects.
 
@@ -40,8 +40,8 @@ To check what is the IP of your container just run the command below:
 What does this command?
 -----------------------
 
-- The `-p` parameters bind ports to the container, thereby `-p 80:80` and `-p 3306:3306` bind port 80 and 3306 of your
-system to the exposed ports of Apache2 and MariaDB 10 respectively.
+- The `-p` parameters bind ports to the container, thereby `-p 80:80` and `-p 5432:5432` bind port 80 and 5432 of your
+system to the exposed ports of Apache2 and PostgreSQL respectively.
 
 - The `-v` parameter mount volumes of your system into the container. Change `/path/of/your/app` to the real path of the
 application that you will run. The `/app` is the Apache2 root of this image, so when you mount your folder application
